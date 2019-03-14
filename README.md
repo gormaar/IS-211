@@ -1,1 +1,1 @@
-# IS-211
+# IS-211 - Algoritmer og datastrukturer
