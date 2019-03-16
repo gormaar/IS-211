@@ -205,32 +205,5 @@ public class KontaktNett {
                     return null;
                 }
 
-                public List<String> ITRY(String mistenkt, int ant)  {
-                    if (vertexMap.containsKey(mistenkt)) {
-
-                        ArrayList<Edge> directContact = vertexMap.get(mistenkt);
-                        for (Edge edge : directContact) {
-
-                            if (edge.getWeight() >= ant) {
-                                tettereKontakter.add(edge.getDest());
-
-                                String name = edge.getDest();
-
-                                ArrayList<Edge> indirectContact = vertexMap.get(name);
-
-                            }
-                        }
-
-                        if (!tettereKontakter.isEmpty()) {
-                            System.out.println("Direkte og indirekte kontakter til " + mistenkt + " :");
-                            System.out.println(tettereKontakter);
-                        }
-                        else    {
-                            System.out.println(mistenkt + " har ingen direkte eller indirekte kontakter med antall <= " + ant);
-                        }
-
-                        return tettereKontakter;
-                    }
-                    return null;
-                }
+               
 }
