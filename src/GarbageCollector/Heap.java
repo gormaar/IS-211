@@ -35,8 +35,8 @@ package GarbageCollector;
  */
 public class Heap {
 
-    public static final int HEAP_SIZE = 100;
     public static final int NULL = -1; // null pointer
+    public static final int HEAP_SIZE = 100;
 
     // flags
     protected static final int FREE = -2; // on  the free list
@@ -52,7 +52,7 @@ public class Heap {
     protected static final int DATA_OFFSET = 5;
     protected static final int HEADER_SIZE = PTR1_OFFSET;
 
-    /**
+     /**
      * This array represents the memory that is available to the program for
      * object creation.
      *

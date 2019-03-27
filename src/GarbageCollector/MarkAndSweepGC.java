@@ -1,4 +1,5 @@
 package GarbageCollector;
+import java.lang.Object;
 
 
 /**
@@ -56,7 +57,7 @@ public class MarkAndSweepGC extends Heap {
      *
      * @return the address to the object.
      *
-     * @throws OutOfMemory if unable to find a memory block, even after garbage
+     * @throws  if unable to find a memory block, even after garbage
      * collection
      */
     public int alloc(int size, int ptr1, int ptr2, String data) {
@@ -121,36 +122,85 @@ public class MarkAndSweepGC extends Heap {
         // oppgave 1 a
 
 
+                int pointer1 = getPtr1(addr);
+                int pointer2 = getPtr2(addr);
 
+                if (pointer1 != NULL) {
 
-    }
+                    setFlag(pointer1, REACHABLE);
+                    mark(pointer1);
+                }
+                else if (pointer2 != NULL) {
+
+                    setFlag(pointer2, REACHABLE);
+                    mark(pointer2);
+                }
+                else {
+                    setFlag(addr, GARBAGE);
+                }
+            }
+
 
     private void sweep() {
         //oppgave 1b
-    }
+
+        for (Integer object : memory)   {
+
+            if (getFlag(object) == GARBAGE) {
+
+                setFlag(object, FREE);
+                int size = getSize(object);
+                returnToFreeList(object, size);
+                System.out.println("Garbage object has been returned to freeList");
+            }
+            else if(getFlag(object) == FREE)    {
+
+                int size = getSize(object);
+                returnToFreeList(object, size);
+                System.out.println("Free object has been returned to freeList");
+
+            }
+        }
+
+        /*for (int i = 0; i < memory.length; i++) {
+            if (getFlag(memory[i]) == FREE) {
+
+                ArrayUtils.remove(memory, i);
+            }
+        }*/
+}
 
     public static void main(String[] args) {
         System.out.println("Test run. Reachable objects have\n"
                 + "sizes which are multiples of 10, while "
                 + "temporary objects have have odd sizes");
+
         MarkAndSweepGC heap = new MarkAndSweepGC(200);
+
         heap.printMemoryMap("Empty heap");
+
         int root = heap.alloc(27, NULL, NULL, "ROOT OBJECT");
+
         heap.setRoot(root);
         heap.printMemoryMap("Created first object: ROOT");
+
         int tmp = heap.alloc(22, NULL, NULL, "tmp ojb 1");
         tmp = heap.alloc(32, NULL, NULL, "tmp ojb 2");
         System.out.println("Create k1");
+
         int branch1 = heap.alloc(17, NULL, NULL, "keep1");
         heap.setPtr1(root, branch1);
         heap.printMemoryMap("Added some objects");
+
         int branch2 = heap.alloc(37, NULL, NULL, "keep2");
         heap.setPtr2(root, branch2);
         heap.printMemoryMap("Added more object and set pointers to them");
+
         int branch22 = heap.alloc(27, NULL, NULL, "keep22");
         heap.setPtr2(branch2, branch22);
         heap.printMemoryMap("set pointers");
         System.out.println("Create another tmp object, but there is no room");
+
         tmp = heap.alloc(22, NULL, NULL, "tmp ojb 3");
         heap.printMemoryMap("another tmp obj");
     }
