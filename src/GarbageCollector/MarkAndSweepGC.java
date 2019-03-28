@@ -125,12 +125,12 @@ public class MarkAndSweepGC extends Heap {
                 int pointer1 = getPtr1(addr);
                 int pointer2 = getPtr2(addr);
 
-                if (pointer1 != NULL) {
+                if (pointer1 != NULL && pointer1 != REACHABLE) {
 
                     setFlag(pointer1, REACHABLE);
                     mark(pointer1);
                 }
-                else if (pointer2 != NULL) {
+                else if (pointer2 != NULL && pointer2 != REACHABLE) {
 
                     setFlag(pointer2, REACHABLE);
                     mark(pointer2);
