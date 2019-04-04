@@ -14,33 +14,36 @@ public class Sykehus {
         pasientKø = new LinkedList<Pasient>();
         pKø = new PriorityQueue<>();
 
-        Pasient pasient1 = new Pasient("Fredrik", 28, "B", true, false);
-        Pasient pasient2 = new Pasient("Petter", 52, "B", false, false);
-        Pasient pasient3 = new Pasient("Ingrid", 37, "C", true, true);
 
     }
 
     public void nyHenvisning(Pasient p) {
         //oppgave 1c
 
-        pasientKø.add(p);
+        pKø.add(p);
         System.out.println("Pasient: " + p + " har blitt plassert i køen");
 
-    }
+        }
+
 
     public Pasient hentNestePasient()   {
 
-        Pasient hentetPasient = pasientKø.remove();
-        System.out.println("Pasient " + hentetPasient + " har blitt hentet");
-        return hentetPasient;
 
+        while (!pKø.isEmpty()) {
+            Pasient nesteP = pKø.poll();
+            System.out.println("Neste pasient: " + nesteP);
 
+        }
+        return null;
     }
+
 
     public void behandleNestePasient()  {
 
         /*Pasient p = hentNestePasient();
-        opererPaa(p);
+        *//*opererPaa(p);
         skrivUt(p);*/
+
+
     }
 }

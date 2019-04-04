@@ -1,7 +1,5 @@
 package EventSimulator;
 
-import EventSimulator.Event;
-
 import java.util.Comparator;
 
 
