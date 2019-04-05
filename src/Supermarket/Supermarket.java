@@ -1,3 +1,4 @@
+/*
 package Supermarket;
 
 import java.util.*;
@@ -93,7 +94,8 @@ public class Supermarket {
 
 
         customerSetup();
-        /*for (int i = 0; i > -1; i++) {
+        */
+/*for (int i = 0; i > -1; i++) {
 
             for (Customer customer : customerList) {
 
@@ -104,6 +106,7 @@ public class Supermarket {
 
                 }
             }
-        }*/
+        }*//*
+
     }
-}
+}*/

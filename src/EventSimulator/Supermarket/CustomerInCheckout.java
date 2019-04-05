@@ -1,3 +1,4 @@
+/*
 package Supermarket;
 
 import EventSimulator.*;
@@ -30,3 +31,4 @@ public class CustomerInCheckout extends Event{
         return new CustomerCheckedOut(customer, time);
     }
 }
+*/

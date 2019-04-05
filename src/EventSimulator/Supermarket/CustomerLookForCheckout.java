@@ -1,3 +1,4 @@
+/*
 package Supermarket;
 
 import EventSimulator.*;
@@ -17,3 +18,4 @@ public class CustomerLookForCheckout extends Event {
 
     }
 }
+*/

@@ -1,3 +1,4 @@
+/*
 package Linking;
 
 import java.util.List;
@@ -7,25 +8,33 @@ import java.util.HashMap;
 
 public class Linker2
 {
-    /** Datastrukturer (opg 2a) - enten her... */
+    */
+/** Datastrukturer (opg 2a) - enten her... *//*
 
-    /** Denne metoden går gjennom bibliotekene (og finner objektfilene
+
+    */
+/** Denne metoden går gjennom bibliotekene (og finner objektfilene
      * som definerer de metodene som er brukt i hovedprogrammet
      * @param mainProgram hovedprogrammet
      * @param libraries bibliotekene linker skal søke i
      * @return liste som inneholder de objektfilene som må være med
      * for å få definert alle funksjoner som blir brukt i hovedprogrammet
-     */
+     *//*
+
     public Set<ObjectFile2> resolveReferences(ObjectFile2 mainProgram, List<Library2> libraries) {
-        /* Vedlegget til oppgaven slutter her */
-        /* Igjen kan vi velge å gå gjennom funksjonene først,
+        */
+/* Vedlegget til oppgaven slutter her *//*
+
+        */
+/* Igjen kan vi velge å gå gjennom funksjonene først,
          * eller bibliotekene først, vi kan også velge mellom
          * dybde-først eller bredde-først traversering  av den
          * grafen vi får fra avhengighetene mellom funksjonene.
          * Det gir fire teoretiske muligheter. Jeg har bare laget to:
          * alt1 går gjennom funksjoner først - dybde-først
          * alt2 går gjennom biblioter først - bredde-først
-         */
+         *//*
+
 
         Set<ObjectFile2> objFiles;
         objFiles = resolveRefsAlt1(ObjectFile2 mainProgram,
@@ -34,7 +43,9 @@ public class Linker2
                 List<Library2> libraries);
     }
 
-    /** alternativ 1 */
+    */
+/** alternativ 1 *//*
+
     resolveRefsAlt1(ObjectFile2 mainProgram, List<Libary2> libs) {
         Set<String> functions = mainProgram.getUnresolvedReferences();
         HashMap<String,ObjectFile2> resolutions = new HashMap<>();
@@ -61,7 +72,9 @@ public class Linker2
         }
     }
 
-    /** alternativ 2 */
+    */
+/** alternativ 2 *//*
+
 
     HashSet<ObjectFile2> objectFiles = new HashSet<>();
     for (String fun : mainProgram.getExternalReferences()) {
@@ -88,8 +101,11 @@ public class Linker2
             }
 
         }
-/** this is a linking error */
+*/
+/** this is a linking error *//*
+
         throw new Error("Unable to resolve "+fun);
     }
 
 }
+*/

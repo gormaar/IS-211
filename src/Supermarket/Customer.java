@@ -1,3 +1,4 @@
+/*
 package Supermarket;
 
 import java.util.*;
@@ -73,4 +74,4 @@ public class Customer {
     public String toString()    {
         return "" + custNr;
     }
-}
+}*/
