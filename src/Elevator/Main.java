@@ -4,20 +4,24 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Elevator elevator = new Elevator(5);
+        Elevator elevator = new Elevator(10);
 
 
         elevator.nyttStopp(3);
         elevator.nyttStopp(1);
 
-        elevator.flytt();
-
+        //elevator.flytt();
+        elevator.nyttStopp(6);
         elevator.nyttStopp(5);
         elevator.nyttStopp(2);
         elevator.nyttStopp(3);
         elevator.nyttStopp(0);
+        elevator.nyttStopp(9);
         elevator.nyttStopp(1);
         elevator.nyttStopp(5);
+        elevator.nyttStopp(8);
+
+
 
 
 

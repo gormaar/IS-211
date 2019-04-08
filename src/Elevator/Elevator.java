@@ -1,6 +1,7 @@
 package Elevator;
 
 import java.util.PriorityQueue;
+import java.util.Comparable;
 
 /**
  * Write a description of class Elevator here.
@@ -16,6 +17,14 @@ public class Elevator implements Comparable<Integer> {
     public static final int OPP = 1;
     private PriorityQueue<Integer> heis;
 
+    Comparable<Integer> comp = new Comparable<Integer>() {
+
+        public int compareTo(Integer a)  {
+
+            return 0;
+
+        }
+    };
 
 
     /** Totalt antall etasjer, nederste etasje er 0,
@@ -34,7 +43,9 @@ public class Elevator implements Comparable<Integer> {
         this.antEtasjer = antEtasjer;
         iEtasje = 0;
         retning = OPP;
-        heis = new PriorityQueue<>();
+
+
+        heis = new PriorityQueue<Integer>(comp);
 
 
         // opprette datastruktur oppgave 1b
@@ -55,8 +66,9 @@ public class Elevator implements Comparable<Integer> {
             retning = STOP;
             heis.poll();
     }
-        System.out.println("Etasje: " + iEtasje + " Stop-etasje: " + head);
-
+       // System.out.println("Etasje: " + iEtasje + " Stop-etasje: " + head);
+        System.out.println(heis);
+        System.out.println(heis.peek());
     }
 
     /** Flytter heisen en etasje opp eller ned. Heisen fortsetter i
@@ -113,5 +125,7 @@ public class Elevator implements Comparable<Integer> {
             return 0;
 
         }
+
+        return 0;
     }
 }
