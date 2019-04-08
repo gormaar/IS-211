@@ -7,24 +7,17 @@ public class Main {
         Elevator elevator = new Elevator(10);
 
 
-        elevator.nyttStopp(3);
-        elevator.nyttStopp(1);
-
-        //elevator.flytt();
-        elevator.nyttStopp(6);
-        elevator.nyttStopp(5);
         elevator.nyttStopp(2);
-        elevator.nyttStopp(3);
-        elevator.nyttStopp(0);
-        elevator.nyttStopp(9);
+        elevator.flytt();
         elevator.nyttStopp(1);
-        elevator.nyttStopp(5);
+        elevator.flytt();
+        elevator.nyttStopp(3);
+        elevator.flytt();
+        elevator.nyttStopp(4);
+        elevator.nyttStopp(6);
         elevator.nyttStopp(8);
-
-
-
-
-
+        elevator.nyttStopp(1);
+        elevator.flytt();
 
     }
 }

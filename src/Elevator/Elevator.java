@@ -1,7 +1,7 @@
 package Elevator;
 
 import java.util.PriorityQueue;
-import java.util.Comparable;
+import java.util.Comparator;
 
 /**
  * Write a description of class Elevator here.
@@ -9,7 +9,7 @@ import java.util.Comparable;
  * @author (your name)
  * @version (a version number or a date)
  */
-public class Elevator implements Comparable<Integer> {
+public class Elevator {
 
     // Konstanter for retning
     public final static int NED = -1;
@@ -17,12 +17,29 @@ public class Elevator implements Comparable<Integer> {
     public static final int OPP = 1;
     private PriorityQueue<Integer> heis;
 
-    Comparable<Integer> comp = new Comparable<Integer>() {
+    Comparator<Integer> comp = new Comparator<Integer>() {
 
-        public int compareTo(Integer a)  {
+        public int compare(Integer etasje, Integer b)  {
 
-            return 0;
 
+            if (retning == OPP && etasje > iEtasje) {
+                if ()
+                return -1;
+            }
+            else if (retning == OPP && etasje < iEtasje)    {
+                return 1;
+            }
+            else if (retning == NED && etasje < iEtasje)    {
+                return -1;
+            }
+            else if (retning == NED && etasje > iEtasje)    {
+                return 1;
+            }
+            else {
+                retning = STOP;
+                return 0;
+
+            }
         }
     };
 
@@ -44,8 +61,7 @@ public class Elevator implements Comparable<Integer> {
         iEtasje = 0;
         retning = OPP;
 
-
-        heis = new PriorityQueue<Integer>(comp);
+        heis = new PriorityQueue<>(comp);
 
 
         // opprette datastruktur oppgave 1b
@@ -66,9 +82,8 @@ public class Elevator implements Comparable<Integer> {
             retning = STOP;
             heis.poll();
     }
-       // System.out.println("Etasje: " + iEtasje + " Stop-etasje: " + head);
-        System.out.println(heis);
-        System.out.println(heis.peek());
+        System.out.println("I etasje: " + iEtasje + " --- Neste stop: " + head + ". etasje");
+
     }
 
     /** Flytter heisen en etasje opp eller ned. Heisen fortsetter i
@@ -80,52 +95,45 @@ public class Elevator implements Comparable<Integer> {
     public int flytt() {
         // oppgave 1d
 
-       while (!heis.isEmpty()) {
 
+            while (!heis.isEmpty()) {
+                int neste = heis.peek();
 
-            int neste = heis.poll();
+                if (neste > iEtasje) {
+                    retning = OPP;
+                    iEtasje++;
 
-            if (neste > iEtasje)    {
-                retning = OPP;
-                iEtasje++;
-                return neste;
+                    if (neste == iEtasje) {
+                        heis.poll();
+                    }
+
+                } else if (neste < iEtasje) {
+                    retning = NED;
+                    iEtasje--;
+
+                    if (neste == iEtasje) {
+                        heis.poll();
+                    }
+
+                } else {
+                    retning = STOP;
+
+                }
             }
-            else if (neste < iEtasje) {
-                retning = NED;
-                iEtasje--;
-                return neste;
-            }
-            else {
-                retning = STOP;
-                return neste;
-            }
 
-        }
 
-        return 0;
+        /*if (heis.isEmpty()) {
+            iEtasje = 0;
+            retning = OPP;
+            System.out.println("Ingen nye stop-requests. Heisen stopper på bunnen: " + iEtasje);
+        }*/
+            //System.out.println("Flytter " + retning);
 
-    }
-
-    public int compareTo(Integer etasje) {
-
-        if (retning == OPP && etasje > iEtasje) {
-            return -1;
-        }
-        else if (retning == OPP && etasje < iEtasje)    {
-            return 1;
-        }
-        else if (retning == NED && etasje < iEtasje)    {
-            return -1;
-        }
-        else if (retning == NED && etasje > iEtasje)    {
-            return 1;
-        }
-        else {
-            retning = STOP;
+            //System.out.println(heis);
+            //System.out.println("Etasje: " + iEtasje + " --- Neste stop: " + heis.peek());
             return 0;
 
-        }
 
-        return 0;
+      }
     }
-}
+
