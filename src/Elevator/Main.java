@@ -7,17 +7,22 @@ public class Main {
         Elevator elevator = new Elevator(10);
 
 
-        elevator.nyttStopp(2);
+        /*elevator.nyttStopp(2);
         elevator.flytt();
         elevator.nyttStopp(1);
         elevator.flytt();
         elevator.nyttStopp(3);
         elevator.flytt();
-        elevator.nyttStopp(4);
         elevator.nyttStopp(6);
+        elevator.nyttStopp(4);
         elevator.nyttStopp(8);
         elevator.nyttStopp(1);
-        elevator.flytt();
+        elevator.flytt();*/
+
+        /*DiskController diskController = new DiskController(5);
+        diskController.run();
+*/
+
 
     }
 }

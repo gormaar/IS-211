@@ -17,28 +17,74 @@ public class Elevator {
     public static final int OPP = 1;
     private PriorityQueue<Integer> heis;
 
-    Comparator<Integer> comp = new Comparator<Integer>() {
+    private Comparator<Integer> comp = new Comparator<Integer>() {
 
         public int compare(Integer etasje, Integer b)  {
 
+            int minusEtasje = etasje - iEtasje;
+            int minusb = b - iEtasje;
 
-            if (retning == OPP && etasje > iEtasje) {
-                if ()
+            if (retning == OPP && etasje > iEtasje && b > iEtasje) {
+                if (minusEtasje < minusb)   {
+                    return -1;
+                }
+                else if (minusEtasje > minusb) {
+                    return 1;
+                }
+                else {
+                    return 0;
+                }
+            }
+
+            else if (retning == OPP && etasje > iEtasje && b < iEtasje) {
                 return -1;
             }
-            else if (retning == OPP && etasje < iEtasje)    {
+            else if (retning == OPP && etasje < iEtasje && b > iEtasje) {
                 return 1;
             }
-            else if (retning == NED && etasje < iEtasje)    {
+
+            else if (retning == OPP && etasje < iEtasje && b < iEtasje) {
+                if (minusEtasje > minusb)   {
+                    return -1;
+                }
+                else if (minusEtasje < minusb)  {
+                    return -1;
+                }
+                else {
+                    return 0;
+                }
+            }
+
+            else if (retning == NED && etasje < iEtasje && b < iEtasje)    {
+                if (minusEtasje > minusb)   {
+                    return -1;
+                }
+                else if (minusEtasje < minusb)  {
+                    return 1;
+                }
+                else {
+                    return 0;
+                }
+            }
+            else if (retning == NED && etasje > iEtasje && b > iEtasje)    {
+                if (minusEtasje < minusb)   {
+                    return -1;
+                }
+                else if (minusEtasje > minusb)  {
+                    return 1;
+                }
+                else {
+                    return 0;
+                }
+            }
+            else if (retning == NED && etasje < iEtasje && b > iEtasje) {
                 return -1;
             }
-            else if (retning == NED && etasje > iEtasje)    {
+            else if (retning == NED && etasje > iEtasje && b < iEtasje) {
                 return 1;
             }
             else {
-                retning = STOP;
                 return 0;
-
             }
         }
     };
@@ -75,17 +121,25 @@ public class Elevator {
         // oppgave 1c
 
         heis.add(etasje);
+        System.out.println("Stop har blitt registrert i etasje: " + etasje);
 
-        int head = heis.peek();
 
-        if (head == iEtasje) {
-            retning = STOP;
-            heis.poll();
+
+        System.out.println("I etasje: " + iEtasje + " --- Neste stop: " + heis.peek() + ". etasje");
+
+        System.out.println("Kø: " + heis);
+        System.out.println("Head of queue " + heis.peek());
+
+        if (etasje == iEtasje)  {
+            fjernStopp(etasje);
+        }
+
     }
-        System.out.println("I etasje: " + iEtasje + " --- Neste stop: " + head + ". etasje");
 
+    public void fjernStopp(int etasje)  {
+        System.out.println("Stopp har blitt fjernet i etasje: " + etasje);
+        heis.remove(etasje);
     }
-
     /** Flytter heisen en etasje opp eller ned. Heisen fortsetter i
      * samme retning så lenge det er ønsker om stopp i den retningen.
      * Heisen snur (begynner å gå den andre veien)når det ikke er flere
@@ -95,45 +149,60 @@ public class Elevator {
     public int flytt() {
         // oppgave 1d
 
-
             while (!heis.isEmpty()) {
                 int neste = heis.peek();
 
                 if (neste > iEtasje) {
                     retning = OPP;
                     iEtasje++;
+                    System.out.println("Flytter en etasje opp");
 
                     if (neste == iEtasje) {
+
+                        System.out.println("Fjernet stopp i etasje: " + heis.peek());
                         heis.poll();
                     }
 
                 } else if (neste < iEtasje) {
                     retning = NED;
                     iEtasje--;
+                    System.out.println("Flytter en etasje ned");
 
                     if (neste == iEtasje) {
+                        System.out.println("Fjernet stopp i etasje: " + heis.peek());
                         heis.poll();
                     }
-
                 } else {
                     retning = STOP;
 
                 }
             }
 
+            if (heis.isEmpty()) {
 
-        /*if (heis.isEmpty()) {
-            iEtasje = 0;
-            retning = OPP;
-            System.out.println("Ingen nye stop-requests. Heisen stopper på bunnen: " + iEtasje);
-        }*/
-            //System.out.println("Flytter " + retning);
+                iEtasje = 0;
+                retning = OPP;
+                System.out.println("Ingen nye stop. Heis settes i idle i etasje: " + iEtasje);
+            }
 
-            //System.out.println(heis);
-            //System.out.println("Etasje: " + iEtasje + " --- Neste stop: " + heis.peek());
             return 0;
-
 
       }
     }
+
+    /*
+    Lesehodet skal bevege seg minst mulig mellom hver fil som lese:
+    Nærmeste-først-algoritmen kan føre til at det blir lang ventetid hos noen leseønsker dersom
+    der er mange leseønsker som ligger nærme hverandre. Dersom det da kommer et leseønske på andre siden
+    av disken vil det ta lang tid for leserhodet å komme seg dit. Derfor blir det kort ventetid
+    for de som ligger nær hverandre, men lang for dem langt borte
+
+    N-step-SCAN-algoritmen vil kjøre noe likt den vanlig elevator-algoritmen vil, men denne tar
+    utgangspunkt i et stykke av hele køen. Dette vil da føre til mer jevn ventetid for hele disken
+    på lik linje med den vanlige elevator algoritmen.
+    Dersom det kommer leseønske men lesehode akkurat beveger seg forbi kan det også bli lang tid
+    før lesehodet kommer tilbake til hvor den var
+
+    Når det kommer til Big O vil
+     */
 

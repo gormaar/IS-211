@@ -1,19 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9455b0b0-2241-4c96-9ef6-ce0072d7c77c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Elevator/Main.java" afterDir="false" />
+    <list default="true" id="4416b4ec-ccdb-4ff8-bef0-9f638ffed2e9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Elevator/DiskController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Elevator/Elevator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Elevator/Elevator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EventSimulator/Supermarket/CustomerCheckedOut.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventSimulator/Supermarket/CustomerCheckedOut.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EventSimulator/Supermarket/CustomerEnter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventSimulator/Supermarket/CustomerEnter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EventSimulator/Supermarket/CustomerInCheckout.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventSimulator/Supermarket/CustomerInCheckout.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EventSimulator/Supermarket/CustomerLookForCheckout.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventSimulator/Supermarket/CustomerLookForCheckout.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EventSimulator/Supermarket/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventSimulator/Supermarket/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Linking/Linker2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Linking/Linker2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Supermarket/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Supermarket/Customer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Supermarket/CustomerSelectCheckout.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Supermarket/CustomerSelectCheckout.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Supermarket/Supermarket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Supermarket/Supermarket.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Elevator/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Elevator/Main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,44 +15,48 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/PatientHandler/Sykehus.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="25" column="9" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/PatientHandler/Pasient.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1020">
-              <caret line="66" column="6" selection-start-line="66" selection-start-column="5" selection-end-line="66" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Elevator/Elevator.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="406">
-              <caret line="87" column="29" lean-forward="true" selection-start-line="87" selection-start-column="29" selection-end-line="87" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Elevator/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" selection-start-line="8" selection-end-line="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.5551232">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/Elevator/Elevator.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state>
+                  <caret line="31" selection-start-line="31" selection-end-line="31" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/Elevator/DiskController.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="442">
+                  <caret line="100" lean-forward="true" selection-start-line="100" selection-end-line="100" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                    <element signature="e#3101#3102#0" expanded="true" />
+                    <element signature="e#3178#3179#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/Elevator/Main.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="425">
+                  <caret line="25" selection-start-line="25" selection-end-line="25" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -75,46 +71,27 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$USER_HOME$/AppData/Local/Temp/Rar$DRa6652.37078/IS-207-2014-solution/src/is211/linker/Linker1.java" />
-        <option value="$PROJECT_DIR$/src/Linking/Dummy.java" />
-        <option value="$USER_HOME$/AppData/Local/Temp/Rar$DRa6652.37078/IS-207-2014-solution/src/is211/linker/Library1.java" />
-        <option value="$PROJECT_DIR$/src/Linking/Library2.java" />
-        <option value="$PROJECT_DIR$/src/Linking/ObjectFile2.java" />
-        <option value="$USER_HOME$/AppData/Local/Temp/Rar$DRa6652.41579/IS-207-2014-solution/src/is211/linker/Linker1.java" />
-        <option value="$PROJECT_DIR$/src/Linking/Library1.java" />
-        <option value="$PROJECT_DIR$/src/Linking/ObjectFile1.java" />
-        <option value="$PROJECT_DIR$/src/Linking/Linker1.java" />
-        <option value="$PROJECT_DIR$/src/Elevator/Dummy.java" />
-        <option value="$PROJECT_DIR$/src/Linking/Linker2.java" />
-        <option value="$PROJECT_DIR$/src/EventSimulator/Supermarket/CustomerInCheckout.java" />
-        <option value="$PROJECT_DIR$/src/EventSimulator/Supermarket/CustomerCheckedOut.java" />
-        <option value="$PROJECT_DIR$/src/EventSimulator/Supermarket/CustomerEnter.java" />
-        <option value="$PROJECT_DIR$/src/EventSimulator/Supermarket/CustomerLookForCheckout.java" />
-        <option value="$PROJECT_DIR$/src/EventSimulator/Supermarket/Main.java" />
-        <option value="$PROJECT_DIR$/src/Supermarket/Customer.java" />
-        <option value="$PROJECT_DIR$/src/Supermarket/CustomerSelectCheckout.java" />
-        <option value="$PROJECT_DIR$/src/Supermarket/Supermarket.java" />
-        <option value="$PROJECT_DIR$/src/Elevator/Main.java" />
         <option value="$PROJECT_DIR$/src/Elevator/Elevator.java" />
+        <option value="$PROJECT_DIR$/src/Elevator/DiskController.java" />
+        <option value="$PROJECT_DIR$/src/Elevator/Test.java" />
+        <option value="$PROJECT_DIR$/src/Elevator/Main.java" />
+        <option value="$PROJECT_DIR$/src/DataStructures/Stack.java" />
+        <option value="$PROJECT_DIR$/src/DataStructures/Stack1.java" />
+        <option value="$PROJECT_DIR$/src/DataStructures/Main.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="248" />
-    <option name="y" value="18" />
+    <option name="x" value="471" />
+    <option name="y" value="55" />
     <option name="width" value="1399" />
     <option name="height" value="1000" />
-  </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -131,18 +108,26 @@
               <item name="IS-211" type="b2602c69:ProjectViewProjectNode" />
               <item name="IS-211" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="DataStructures" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="IS-211" type="b2602c69:ProjectViewProjectNode" />
+              <item name="IS-211" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Elevator" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554477081504" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554914135638" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -158,7 +143,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Main (1)">
+    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="DataStructures.Main" />
+      <module name="IS-211" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="DataStructures.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Elevator.Main" />
       <module name="IS-211" />
@@ -174,6 +172,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main (1)" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -183,21 +182,19 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="9455b0b0-2241-4c96-9ef6-ce0072d7c77c" name="Default Changelist" comment="" />
-      <created>1554196752584</created>
+      <changelist id="4416b4ec-ccdb-4ff8-bef0-9f638ffed2e9" name="Default Changelist" comment="" />
+      <created>1554723543761</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1554196752584</updated>
-      <workItem from="1554196755013" duration="9335000" />
-      <workItem from="1554274349331" duration="2235000" />
-      <workItem from="1554282704670" duration="14688000" />
-      <workItem from="1554370600386" duration="5451000" />
-      <workItem from="1554450274702" duration="13673000" />
+      <updated>1554723543761</updated>
+      <workItem from="1554723548147" duration="20824000" />
+      <workItem from="1554808562911" duration="11320000" />
+      <workItem from="1554889754423" duration="5915000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45382000" />
+    <option name="totallyTimeSpent" value="38059000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -212,343 +209,95 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26172706" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6983871" visible="true" weight="0.18123667" />
+      <window_info id="Structure" order="1" sideWeight="0.3016129" side_tool="true" visible="true" weight="0.18123667" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" sideWeight="0.4978678" weight="0.32936078" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946696" weight="0.24702059" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.3997833" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32936078" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32936078" />
-      <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32936078" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50053304" side_tool="true" weight="0.32936078" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Debug" order="2" weight="0.31310943" />
+      <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="5" sideWeight="0.49946696" weight="0.32936078" />
+      <window_info anchor="bottom" id="Docker" order="6" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49946696" weight="0.32936078" />
+      <window_info anchor="bottom" id="Database Changes" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49946696" weight="0.32936078" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5010661" side_tool="true" weight="0.32827735" />
+      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.49946696" weight="0.32936078" />
+      <window_info active="true" anchor="bottom" id="Run" order="12" sideWeight="0.4989339" visible="true" weight="0.32827735" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Theme Preview" order="4" />
-      <window_info anchor="right" id="Maven" order="5" />
-      <window_info anchor="right" id="Capture Analysis" order="6" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Database" order="8" />
+      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Maven" order="6" />
+      <window_info anchor="right" id="Capture Analysis" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Elevator/Elevator.java</url>
-          <line>70</line>
-          <properties />
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Elevator/Elevator.java</url>
-          <line>73</line>
-          <properties />
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Elevator/Elevator.java</url>
-          <line>76</line>
-          <properties />
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Elevator/Elevator.java</url>
-          <line>75</line>
-          <properties />
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Elevator/Elevator.java</url>
-          <line>78</line>
-          <properties />
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Elevator/Elevator.java</url>
-          <line>77</line>
-          <properties />
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Elevator/Elevator.java</url>
-          <line>80</line>
-          <properties />
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Elevator/Elevator.java</url>
-          <line>81</line>
-          <properties />
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Elevator/Elevator.java</url>
-          <line>82</line>
-          <properties />
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Elevator/Elevator.java</url>
-          <line>83</line>
-          <properties />
-          <option name="timeStamp" value="12" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Elevator/Elevator.java</url>
-          <line>85</line>
-          <properties />
-          <option name="timeStamp" value="13" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Elevator/Elevator.java</url>
-          <line>86</line>
-          <properties />
-          <option name="timeStamp" value="14" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Elevator/Elevator.java</url>
-          <line>87</line>
-          <properties />
-          <option name="timeStamp" value="15" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Elevator/Elevator.java</url>
-          <line>92</line>
-          <properties />
-          <option name="timeStamp" value="16" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Elevator/Elevator.java</url>
-          <line>49</line>
-          <properties />
-          <option name="timeStamp" value="17" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Elevator/Elevator.java</url>
-          <line>51</line>
-          <properties />
-          <option name="timeStamp" value="18" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Elevator/Elevator.java</url>
-          <line>53</line>
-          <properties />
-          <option name="timeStamp" value="19" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Elevator/Elevator.java</url>
-          <line>54</line>
-          <properties />
-          <option name="timeStamp" value="20" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Elevator/Elevator.java</url>
-          <line>55</line>
-          <properties />
-          <option name="timeStamp" value="21" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Elevator/Elevator.java</url>
-          <line>57</line>
-          <properties />
-          <option name="timeStamp" value="22" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/Documents/Skole/3. Semester/Netbeans/LES/src/java/EditModule.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#2963#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DRa6652.37078/IS-207-2014-solution/src/is211/linker/Dummy.java" />
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DRa6652.37078/IS-207-2014-solution/src/is211/linker/Library1.java" />
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DRa6652.37078/IS-207-2014-solution/src/is211/linker/Linker2.java" />
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DRa6652.37078/IS-207-2014-solution/src/is211/linker/Library2.java" />
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DRa6652.37078/IS-207-2014-solution/src/is211/linker/Linker1.java" />
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DRa6652.37078/IS-207-2014-solution/src/is211/linker/ObjectFile1.java" />
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DRa6652.37078/IS-207-2014-solution/src/is211/linker/ObjectFile2.java" />
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DRa6652.41579/IS-207-2014-solution/src/is211/linker/Dummy.java" />
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DRa6652.41579/IS-207-2014-solution/src/is211/linker/Library1.java" />
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DRa6652.41579/IS-207-2014-solution/src/is211/linker/Library2.java" />
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DRa6652.41579/IS-207-2014-solution/src/is211/linker/ObjectFile1.java" />
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DRa6652.41579/IS-207-2014-solution/src/is211/linker/ObjectFile2.java" />
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DRa6652.41579/IS-207-2014-solution/src/is211/linker/Linker1.java" />
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DRa6652.41579/IS-207-2014-solution/src/is211/linker/Linker2.java" />
-    <entry file="file://$PROJECT_DIR$/src/DiskUsage/DiskUsage.rar" />
-    <entry file="file://$PROJECT_DIR$/src/KontaktNett/KontaktNett.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="76" lean-forward="true" selection-start-line="76" selection-end-line="76" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Linking/Library1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Linking/Linker1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" selection-start-line="26" selection-end-line="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#975#976#0" expanded="true" />
-            <element signature="e#1002#1003#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Linking/Library2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Linking/Dummy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Linking/ObjectFile2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Linking/ObjectFile1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Elevator/Dummy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="3" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Linking/Linker2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="25" lean-forward="true" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/EventSimulator/Supermarket/CustomerInCheckout.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="452">
-          <caret line="32" column="1" selection-end-line="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/EventSimulator/Supermarket/CustomerCheckedOut.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="1" selection-end-line="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/EventSimulator/Supermarket/CustomerEnter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/EventSimulator/Supermarket/CustomerLookForCheckout.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/EventSimulator/Supermarket/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" selection-end-line="15" />
-          <folding>
-            <element signature="e#0#198#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Supermarket/Customer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="8" selection-end-line="77" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Supermarket/CustomerSelectCheckout.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" selection-end-line="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Supermarket/Supermarket.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="7" selection-end-line="112" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/PatientHandler/Sykehus.java">
+    <entry file="file://$PROJECT_DIR$/src/DiskUsage/DiskUsage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
-          <caret line="25" column="9" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/PatientHandler/Pasient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1020">
-          <caret line="66" column="6" selection-start-line="66" selection-start-column="5" selection-end-line="66" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Elevator/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Elevator/Elevator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="406">
-          <caret line="87" column="29" lean-forward="true" selection-start-line="87" selection-start-column="29" selection-end-line="87" selection-end-column="29" />
+        <state>
+          <caret line="31" selection-start-line="31" selection-end-line="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Elevator/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Elevator/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DataStructures/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DataStructures/Stack1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="22" lean-forward="true" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Elevator/DiskController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="100" lean-forward="true" selection-start-line="100" selection-end-line="100" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3101#3102#0" expanded="true" />
+            <element signature="e#3178#3179#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
