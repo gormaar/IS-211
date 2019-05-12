@@ -17,9 +17,8 @@ public class Edge {
     public String getSrc() {
         return src;
     }
-
     public String getDest() {
-        return dest;
+         return dest;
     }
 
     public int getWeight()  {

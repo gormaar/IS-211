@@ -130,7 +130,6 @@ public class KontaktNett {
                             break;
 
                     }
-
                 }
             }
         }
